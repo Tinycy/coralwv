@@ -1,0 +1,11 @@
+{
+  "name": "coralwv",
+  "version": "1.0.0",
+  "description": "宠物",
+  "main": "index.js",
+  "scripts": {
+    "test": "'"
+  },
+  "author": "Tiny",
+  "license": "ISC"
+}
