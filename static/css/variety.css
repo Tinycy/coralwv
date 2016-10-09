@@ -19,7 +19,7 @@ main section div{
 }
 .container section ul li{
 	display: inline-block;
-	width:24%;
+	/*width:24%;*/
 	width:235px;
 	height:180px;
 }
@@ -91,3 +91,4 @@ main section div{
 	top:25px;
 	font-size: 22px;
 }
+

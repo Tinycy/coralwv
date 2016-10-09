@@ -1,0 +1,37 @@
+main{
+	background:white;
+}
+main ul{
+	margin:0;
+	padding:0;
+}
+main ul li{
+	/*width:240px;*/
+	/*height:240px;*/
+	display: inline-block;
+	width:24%;
+}
+.container ul li img{
+	width:100%
+}
+.container ul li hr{
+	border:dashed 1px gray;
+}
+.container ul li p{
+	text-align: center;
+	color:rgb(211,130,0);
+}
+.container ul li p span b{
+	font-size: 22px;
+}
+.container ul li div{
+	width:190px;
+	height:35px;
+	background:rgb(211,130,0);
+	text-align: center;
+	color:white;
+	margin:0 auto;
+	line-height: 35px;
+	border-radius: 5px ;
+	cursor: pointer;
+}

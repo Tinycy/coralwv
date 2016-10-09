@@ -1,0 +1,41 @@
+.backg2{
+	background-image: url(../images/bj3.png);
+	height: 290px;
+	width:100%;
+}
+aside{
+	width:55%;
+	height:300px;
+	float: left;
+	/*background:gray;*/
+}
+main section aside div{
+	width:260px;
+	height: 140px;
+	/*float: left;*/
+	display: inline-block;
+	margin: 5px;
+	margin-top:10px;
+}
+main section aside div img{
+	width:100%;
+}
+main section ul {
+	float:left;
+}
+table{
+	 border-collapse:  separate;   
+	 /*border-spacing:   15px;*/ 
+	 font-size: 14px;
+}
+td{
+	border-bottom: solid 1px lightgray;
+	padding:10px;
+	cursor:pointer;
+}
+tr{
+	color:gray;
+}
+tr:hover{
+	color:orange;
+}
