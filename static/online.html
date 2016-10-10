@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<link rel="stylesheet" type="text/css" href="css/care.css"/>
 		<link rel="stylesheet" type="text/css" href="css/online.css"/>
+		<link rel="stylesheet" type="text/css" href="css/Alert.css"/>
 		<link rel="shortcut icon" href="images/1.ico" />
 		<script src="libs/jQuery v3.1.0.js"></script>
 	</head>
@@ -31,25 +32,29 @@
 		<main>
 			<section class='container '>
 				<h5>发表您的留言:</h5>
-					<form action="/" method="post">
-						<label for="name">姓名:</label>
-						<input type="text" name="name" id="name" placeholder="请输入您的姓名" />
-						<label for="email">邮箱:</label>
+					<form action="#" method="post">
+						<label for="name"> &#x3000;姓名:</label>
+						<input type="text" name="name" id="name" placeholder="请输入您的姓名"required="required"/>
+						<span id="must">*</span>
+						<label for="email"> &#x3000;邮箱:</label>
 						<input type="text" name="email" id="email" placeholder="请输入您的邮箱" />
 						<br />
-						<label for="phone">电话</label>
+						<label for="phone"> &#x3000;电话:</label>
 						<input type="text" name="phone" id="phone" placeholder="请输入您的电话" />
 						<br />
-						<div class="content" >内容:</div>
-						<textarea rows="4" cols="50" name="comment" form="usrform"placeholder="请在此处输入文本...">
+						<div class="content-area" > &#x3000;内容: </div>
+						<textarea rows="6" cols="80" name="content" placeholder="请在此处输入文本...">
 </textarea>
 <br />
 						<label for="">验证码:</label>
-						<input type="text" name="autoCode" id="autoCode" placeholder="请输入验证码" /><span>验证码</span>
+						<input type="text" name="autoCode" id="autoCode" placeholder="请输入验证码" required/><span>验证码</span>
 						<br />
 						<input class="commit" type="submit" value="提交留言"/>
 					</form>
-					
+					<h5>留言:</h5>
+					<hr />
+					<p class="massage">暂无留言</p>
+					<article></article>
 			</section>
 			<div class="clear">
 				</div>
@@ -76,5 +81,7 @@
 		</footer>
 	</body>
 	<script src="js/index.js"></script>
-
+<script src="js/online.js"></script>
+<script src="js/Alert.js"></script>
+<script src="js/getMsg.js"></script>
 </html>

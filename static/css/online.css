@@ -1,6 +1,7 @@
 h5{
 	font-weight: normal;
 	color:grey;
+	margin:0;
 }
 label{
 	font-size:12px;
@@ -9,16 +10,21 @@ label{
 textarea{
 	/*color:gray;*/
 }
+#must{
+	margin-right:100px;
+	color:red;
+}
 input{
 	width:200px;
 	height:30px;
-	margin-right:150px;
+	margin-right:10px;
 	margin-top:20px;
 }
 textarea{
 	margin-top:20px;
+	margin-left:8px;
 }
-.content{
+.content-area{
 	display: block;
 	line-height: 80px;
 	float: left;
@@ -31,4 +37,25 @@ textarea{
 	height: 50px;
 	color:white;
 	border-radius: 5px;
+}
+.massage{
+	text-align: left;
+	color:gray;
+}
+article section{
+	width:800px;
+	box-shadow: 0 0 5px blue;
+	margin:10px;			}
+article section div{
+		color:peru;
+		font-size: 18px;
+		
+	}
+article section p{
+	text-align: left;
+	color:mediumpurple;
+}
+article section span{
+	margin:30px;
+	display: inline-block;
 }
