@@ -15,7 +15,9 @@ Alert.prototype.showMask = function(){
 	document.body.appendChild(mask)
 	
 	mask.className = 'modal-mask'
+	var height = document.body.offsetHeight
 	document.body.style = "overflow:hidden"
+	console.log(height)
 	
 }
 

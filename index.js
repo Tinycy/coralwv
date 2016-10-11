@@ -7,6 +7,7 @@ var app = exp();
 app.use(exp.static('static'));
 
 app.use(bodyParser.urlencoded({extended:true}))
+//处理留言的请求
 app.post('/online',multipart.array(),(request,response)=>{
 //	console.log(request.body);
 //	console.log(request.body.content);
