@@ -7,15 +7,17 @@ $(function(){
 			alert('两次密码不一致！')
 			return
 		}
-		var data = new FormData(this)
+		var data = new FormData(e.target)
+//		console.log(data)
+//		console.log(this)
 		var xhr = new XMLHttpRequest()
-		console.log(xhr)
-		
 		xhr.onreadystatechange = function(){
+//			console.log(xhr.readyState)
 			if(xhr.readyState == 4 ){
+				console.log(xhr.readyState)
 				var jsonObj = JSON.parse(xhr.responseText)
 				if(jsonObj.success == 1){
-					alert('恭喜你，注册成功！')
+					alert('恭喜你，注册成功')
 				}
 			}
 		}
@@ -23,3 +25,5 @@ $(function(){
 		xhr.send(data)
 	}
 })
+	
+
