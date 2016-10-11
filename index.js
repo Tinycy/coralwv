@@ -62,6 +62,26 @@ app.get('/messages',(request,response)=>{
 	})
 })
 
+
+
+//处理注册的请求
+app.post('/register',multipart.array(),(request,response)=>{
+	var name = request.body.name;
+	var psw = request.body.psw;
+	var email = request.body.email;
+	var phone = request.body.phone;
+	var massage = request.body.massage;
+	var registerMsg = {
+		name,
+		psw,
+		email,
+		phone,
+		massage
+	}
+	console.log(registerMsg)
+})
+
+
 app.listen(3000,()=>{
 	console.log('Tiny server is running!')
 })
