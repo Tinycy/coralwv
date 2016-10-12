@@ -14,7 +14,7 @@ $(function(){
 		xhr.onreadystatechange = function(){
 //			console.log(xhr.readyState)
 			if(xhr.readyState == 4 ){
-				console.log(xhr.readyState)
+//				console.log(xhr.readyState)
 				var jsonObj = JSON.parse(xhr.responseText)
 				if(jsonObj.success == 1){
 					alert('恭喜你，注册成功')

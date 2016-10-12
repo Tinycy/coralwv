@@ -12,7 +12,8 @@ main ul li{
 	width:24%;
 }
 .container ul li img{
-	width:100%
+	width:100%;
+	cursor:pointer;
 }
 .container ul li hr{
 	border:dashed 1px gray;
