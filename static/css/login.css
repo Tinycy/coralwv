@@ -1,11 +1,13 @@
+
 .demo-login{
 	width:180px;
 	height:40px;
 	line-height: 40px;
 	font-size:13px;
-	position: absolute;
+	position: relative;
+	/*float:left;*/
 	left:400px;
-	top:40px;
+	top:-60px;
 	padding-left:20px;
 	color:rgb(214,92,56);
 	background:rgb(248,240,207);
