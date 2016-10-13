@@ -1,12 +1,15 @@
-var exp = require("express");
-var bodyParser = require('body-parser');
-var multer = require('multer');
-var fs = require('fs');
-var multipart = multer();
-var app = exp();
-app.use(exp.static('static'));
+	var express = require("express");
+	var bodyParser = require('body-parser');
+	var multer = require('multer');
+	var fs = require('fs');
+	var multipart = multer();
+	var mongoose = require('mongoose');
+	var template = require('art-template');
+	var app = express();
+	app.use(express.static('static'));
+	app.use(bodyParser.urlencoded({extended:true}));
+	template.config('cache',false);
 
-app.use(bodyParser.urlencoded({extended:true}))
 //处理留言的请求
 app.post('/online',multipart.array(),(request,response)=>{
 //	console.log(request.body);

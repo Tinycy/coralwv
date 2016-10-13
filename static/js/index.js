@@ -16,6 +16,7 @@ $(function() {
 //			console.log(index)
 		
 	})
+	
 	window._bd_share_config = {
 		common : {
 			bdText : '自定义分享内容',	

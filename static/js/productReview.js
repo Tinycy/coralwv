@@ -154,4 +154,6 @@ $(function() {
 	},function(){
 		$('.bdsharebuttonbox').css('display','none')
 	})
+	//星级评价的代码
+	
 })
